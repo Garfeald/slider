@@ -1,0 +1,507 @@
+/*Обнуление*/
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a, a:visited {
+	text-decoration: none;
+  }
+
+@font-face {
+	font-family: 'Futura PT Bold';
+	src: url('../fonts/futura_pt_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_bold.svg#futura_pt_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Futura PT Light';
+	src: url('../fonts/futura_pt_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_light.svg#futura_pt_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+html,body{
+	height: 100%;
+	background: #FFFFFF;
+	font-size: 25px;
+}
+.wrapper{
+	height: 100%;
+	padding: 0 60px;
+	max-width: 1920px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+
+.header__portfolio{
+	font-family: 'Futura PT Bold';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 100%;
+	color: #A89365;
+	margin: 0 0 20px 20px;
+}
+
+.header__nav{
+	display: flex;
+	margin: 30px 0 0 20px;
+	flex-wrap: nowrap;
+}
+
+.header__nav_arrow{
+	margin-right: 20px;
+	margin-left: -30px;
+}
+
+.nav__stripe{
+	position: relative;
+	padding: 0 0 15px 0;
+}
+
+.nav__arrow{
+	position: absolute;
+	padding: 0 0 15px 12px;
+}
+
+.header__nav_text{
+	font-family: 'Futura PT Light';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+	color: #A89365;
+	margin: 0 40px;
+}
+
+.header__nav_arrow{
+	display: flex;
+	align-items: center;
+}
+.slick-slider{
+	min-width: 0;
+}
+.slick-list {
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+
+.slick-dots button{
+	cursor: pointer;
+}
+.slider {
+	position: relative;
+	padding: 0px 0px;
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0
+}
+.slider .slick-arrow.slick-prev{
+	position: absolute;
+	left: 0;
+	background: url('../img/Arrow_left.svg') 0 0 / 100% no-repeat;
+	width: 16px;
+	height: 32px;
+	cursor: pointer;
+	margin: -150px 0px 0px -30px;
+}
+.slider .slick-arrow.slick-next{
+	position: absolute;
+	right: 0;
+	background: url('../img/Arrow-right.svg') 0 0 / 100% no-repeat;
+	width: 16px;
+	height: 32px;
+	cursor: pointer;
+	margin: -150px -30px 0px 0px;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	background-color: #F2F2F2;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: #A89365;
+}
+
+.slider__item {
+	margin: 0 0;
+	padding: 0px 20px;
+}
+
+.slider__item_text{
+	font-family: 'Futura PT Bold';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	font-weight: 700;
+	color: #A89365;
+} 
+
+.slider__item_subText{
+	font-family: 'Futura PT Light';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: #575757;
+	flex: none;
+	order: 2;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 20px 0px;
+}
+
+.slider__item img{
+	max-width: 100%;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.buttons__item{
+	font-family: 'Futura PT Light';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #A89365;
+	width: 360px;
+	height: 60px;
+	border: 1px solid #A89365;
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+	margin: 20px 20px 0 20px;
+	cursor: pointer;
+}
+
+.buttons__item:hover{
+	color: #ffffff;
+	background-color: #A89365;
+}
+
+
+@media (max-width:1920px){
+	.slick-dots li{
+		display: none;
+	}
+}
+
+@media (max-width:1280px){
+	.header__portfolio{
+		font-family: 'Futura PT Bold';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 100%;
+		color: #A89365;
+		margin: 0 0 20px 20px;
+	}
+
+	.slider__item_text{
+		font-family: 'Futura PT Bold';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		font-weight: 700;
+		color: #A89365;
+	} 
+
+	.buttons__item{
+		width: 300px;
+		height: 45px;
+	}
+
+	.slider .slick-arrow.slick-prev{
+		position: absolute;
+		left: 0;
+		background: url('../img/Arrow_left.svg') 0 0 / 100% no-repeat;
+		width: 16px;
+		height: 32px;
+		cursor: pointer;
+		margin: -150px 0px 0px -20px;
+	}
+	.slider .slick-arrow.slick-next{
+		position: absolute;
+		right: 0;
+		background: url('../img/Arrow-right.svg') 0 0 / 100% no-repeat;
+		width: 16px;
+		height: 32px;
+		cursor: pointer;
+		margin: -150px -20px 0px 0px;
+	}
+
+	.slider__item_image{
+		width: 270px;
+		height: 360px;
+	}
+
+	.slider {
+		padding: 0px 0px;
+	}
+
+	.wrapper{
+		height: 100%;
+		padding: 0 40px;
+	}
+
+	.header__nav{
+		display: flex;
+		margin: 10px 0 0 40px;
+		flex-wrap: nowrap;
+	}
+
+	.nav__stripe{
+		position: relative;
+		padding: 0 0 17px 0;
+	}
+	
+	.nav__arrow{
+		position: absolute;
+		padding: 0 0 17px 12px;
+	}
+}
+
+@media (max-width:767px){
+	.wrapper{padding: 50px 10px;}
+}
+
+
+@media (max-width:600px){
+	.wrapper{
+		height: 100%;
+		padding: 0px 10px;
+	} 
+
+	.header__portfolio{
+		font-family: 'Futura PT Bold';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 100%;
+		color: #A89365;
+		margin: 0 0 20px 10px;
+	} 
+	
+	.header__nav_arrow{
+		margin-right: 10px;
+		margin-left: -30px;
+	}
+
+	.header__nav_text{
+		font-family: 'Futura PT Light';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 23px;
+		color: #A89365;
+		margin-right: 0 10px 0 0 ;
+	}
+
+	.slider__item_text{
+		font-family: 'Futura PT Bold';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		font-weight: 700;
+		color: #A89365;
+	} 
+
+	.slider__item_subText{
+		font-family: 'Futura PT Light';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 30px;
+		color: #575757;
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 20px 0px;
+	}
+
+	.slider__item {
+		margin: 0px 0;
+		padding: 0px 10px;
+	} 
+	.slider .slick-arrow.slick-prev{
+		display: none;
+		position: absolute;
+		left: 0;
+		background: none;
+		width: 16px;
+		height: 32px;
+		cursor: pointer;
+		margin: -150px 0px 0px -30px;
+	}
+	.slider .slick-arrow.slick-next{
+		display: none;
+		position: absolute;
+		right: 0;
+		background: none;
+		width: 16px;
+		height: 32px;
+		cursor: pointer;
+		margin: -150px -30px 0px 0px;
+	}
+
+	.slick-dots li{
+		display: block;
+	}
+
+	.buttons__item{
+		width: 560px;
+		height: 45px;
+		margin: 20px 0 0 0;
+	}
+}
+
+@media (max-width: 450px){
+	.header{
+		display: flex;
+		justify-content: start;
+		flex-wrap: wrap;
+		align-items: top;
+	}
+
+	.header__nav_arrow{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.header__nav{
+		display: flex;
+		margin: 0px 0 0 0px;
+		flex-wrap: nowrap;
+	}
+
+	.header__nav_text{
+		justify-content: start;
+		font-family: 'Futura PT Light';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 23px;
+		color: #A89365;
+		margin: 0 40px 15px 10px ;
+	}
+
+	.slider__item_text{
+		font-family: 'Futura PT Bold';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		font-weight: 700;
+		color: #A89365;
+	} 
+
+	.slider__item_subText{
+		font-family: 'Futura PT Light';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 30px;
+		color: #575757;
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 20px 0px;
+	}
+}
+
+@media (max-width: 320px){
+	.header{
+		display: flex;
+		justify-content: start;
+		flex-wrap: wrap;
+		align-items: top;
+	}
+
+	.header__nav_arrow{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.header__nav{
+		display: flex;
+		margin: 0px 0 0 0px;
+		flex-wrap: nowrap;
+	}
+
+	.header__nav_text{
+		justify-content: start;
+		font-family: 'Futura PT Light';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 23px;
+		color: #A89365;
+		margin: 0 40px 15px 10px ;
+	}
+
+	.slider__item_text{
+		font-family: 'Futura PT Bold';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		font-weight: 700;
+		color: #A89365;
+	} 
+
+	.slider__item_subText{
+		font-family: 'Futura PT Light';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 30px;
+		color: #575757;
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 20px 0px;
+	}
+}
