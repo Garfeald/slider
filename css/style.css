@@ -365,6 +365,7 @@ html,body{
 	.slider__item {
 		margin: 0px 0;
 		padding: 0px 10px;
+		align-self: stretch;
 	} 
 	.slider .slick-arrow.slick-prev{
 		display: none;
@@ -415,6 +416,7 @@ html,body{
 		display: flex;
 		margin: 0px 0 0 0px;
 		flex-wrap: nowrap;
+		align-self: stretch;
 	}
 
 	.header__nav_text{
@@ -426,6 +428,11 @@ html,body{
 		line-height: 23px;
 		color: #A89365;
 		margin: 0 40px 15px 10px ;
+		align-self: stretch;
+	}
+
+	.slider__item{
+		padding: 0 10px;
 	}
 
 	.slider__item_text{
@@ -435,6 +442,7 @@ html,body{
 		font-size: 24px;
 		font-weight: 700;
 		color: #A89365;
+		align-self: stretch;
 	} 
 
 	.slider__item_subText{
@@ -493,6 +501,7 @@ html,body{
 		font-size: 24px;
 		font-weight: 700;
 		color: #A89365;
+		align-self: stretch;
 	} 
 
 	.slider__item_subText{
@@ -508,4 +517,9 @@ html,body{
 		flex-grow: 0;
 		margin: 20px 0px;
 	}
+
+	.wrapper{
+		height: 100%;
+		padding: 0px 20px;
+	} 
 }
