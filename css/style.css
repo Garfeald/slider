@@ -450,6 +450,10 @@ html,body{
 		flex-grow: 0;
 		margin: 20px 0px;
 	}
+	.wrapper{
+		height: 100%;
+		padding: 0px 30px;
+	} 
 }
 
 @media (max-width: 320px){
